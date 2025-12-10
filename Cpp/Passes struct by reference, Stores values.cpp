@@ -1,0 +1,46 @@
+// Create a program that runs calculations on numbers and outputs the result.
+
+// Description: Struct passed by reference. Stores values. 
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct multiplyNumber {
+   string header1;
+   string header2;
+   string header3;
+   int byFour[11];
+   int bySix[11];
+};
+
+void multiplyNumberFunction(multiplyNumber& inputStruct);
+
+int main()
+{		
+   
+   cout << "Program displays 10 through 20 multiplied by 4 and 6." << endl;
+
+   multiplyNumber structNumeroUno;
+
+   multiplyNumberFunction(structNumeroUno);
+   
+   return 0;
+}
+   
+void multiplyNumberFunction(multiplyNumber& inputStruct) {
+   inputStruct.header1 = "A number multiplied by 4: ";
+   inputStruct.header2 = "A number multiplied by 6: ";
+
+   int index = 0;
+   int i = 10;
+   while (index <= 10) {
+      inputStruct.byFour[index] = i * 4;
+      inputStruct.bySix[index] = i * 6;
+      cout << inputStruct.header1 << inputStruct.byFour[index] << endl;
+      cout << inputStruct.header2 << inputStruct.bySix[index] << endl;
+      i++;
+      index++;
+   }
+}

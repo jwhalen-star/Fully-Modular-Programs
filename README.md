@@ -1,3 +1,4 @@
-Please find within this repository programs that utilize basic modular programming functionality in various languages in which I explore various syntaxes and various programming strategies to address the given scenarios.
+Please find within this repository various modular programs in a number of programming languages that utilize basic modular programming functionality. I explore the syntactic intricacies of each language and employ a number of strategies to address the given scenarios.
+
 
 
